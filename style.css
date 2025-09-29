@@ -2,6 +2,7 @@ body {
     padding: 100px;
     font-family: 'Courier New', monospace;
     background-color: #ffffff;
-    background-image: url "https://vscode.dev/github/FrancescaAgostini/FrancescaAgostini.github.io/blob/main/assets/IMG_0980.JPG";
+    background-image: url('https://vscode.dev/github/FrancescaAgostini/FrancescaAgostini.github.io/blob/main/assets/IMG_0980.JPG');
+    background-attachment: fixed;
     background-size: cover;
 }
