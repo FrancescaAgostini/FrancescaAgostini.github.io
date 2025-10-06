@@ -1,7 +1,16 @@
 body {
-    padding: 100px;
     font-family: 'Courier New', monospace;
-    background-image: url('assets/IMG_0980.JPG');
-    background-attachment: fixed;
-    background-size: cover;
+    margin: 5% 10% 10%;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    border-radius: 5%;
 }
