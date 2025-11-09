@@ -6,7 +6,7 @@ This is a simple presentation page written _by myself about myself_.
     * [University of Geneva](https://www.unige.ch/) 
 * Professional backgrounds
 * Passions
-    * Including few pictures
+    * Including a few pictures
 
 > Note: currently, this page is only available in French.
 
