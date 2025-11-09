@@ -1,5 +1,5 @@
 # Francesca Agostini's web page
-This is a very simple page written _by myself about myself_. 
+This is a simple presentation page written _by myself about myself_ 
 
 ### Contents
 * Academic informations
@@ -7,7 +7,7 @@ This is a very simple page written _by myself about myself_.
 * Passions
     * A few pictures
 
-> Note : this page is currently only available in French.
+> Note: currently, this page is only available in French.
 
 
 
