@@ -1,3 +1,15 @@
-# Francesca Agostini's homepage
+# Francesca Agostini's web page
+This is a very simple page written _by myself about myself_. 
 
-This is a simple website page including a short presentation of my professional background as well as my passions.
+### Contents
+* Academic informations
+* Professional backgrounds
+* Passions
+    * A few pictures
+
+> Note : this page is currently only available in French.
+
+
+
+
+
