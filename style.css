@@ -38,15 +38,6 @@ div div {
     margin-bottom: 1rem;
 }
 
-.blockquote {
-    font-size: small;
-    font-style: italic;
-}
-
-.blockquote-footer{
-    font-size: small;
-}
-
 .carousel {
     max-width: 35rem;
     margin: auto;
@@ -60,8 +51,6 @@ div div {
     margin-bottom: 1rem;
 }
 
-/*Utilisation de la proprieté @media dans le cadre de ce TP pour entraînement personnel*/ 
-
 @media (max-width: 576px) {
     .carousel {
         margin-left: 0.7em;
@@ -69,6 +58,7 @@ div div {
        }
     }
 
-.ms-md-3 {
-    font-size: x-small;
+h3 {
+    font-size: medium;
+    font-weight: bold;
 }
