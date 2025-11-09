@@ -5,7 +5,7 @@ This is a simple presentation page written _by myself about myself_
 * Academic informations
 * Professional backgrounds
 * Passions
-    * A few pictures
+    * Including few pictures
 
 > Note: currently, this page is only available in French.
 
