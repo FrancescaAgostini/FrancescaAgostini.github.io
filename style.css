@@ -172,3 +172,163 @@
     h1 { font-size: 1.9rem; }
     .entry-head { flex-direction: column; gap: 0.1rem; }
   }
+
+  /* ---------- Accordion (Career path section) ---------- */
+
+.role-accordion,
+.sub-accordion {
+  --bs-accordion-border-color: var(--line);
+  --bs-accordion-btn-focus-border-color: var(--accent);
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 3px rgba(91, 111, 78, 0.25);
+  --bs-accordion-active-bg: transparent;
+  --bs-accordion-active-color: var(--ink);
+  --bs-accordion-btn-color: var(--ink);
+  --bs-accordion-color: var(--ink);
+  font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+}
+
+.role-accordion {
+  border-top: 1px solid var(--line);
+}
+
+.role-accordion > .accordion-item {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--line);
+}
+
+.role-accordion > .accordion-item:last-child {
+  border-bottom: none;
+}
+
+.role-accordion .accordion-button {
+  background: transparent;
+  padding: 1.1rem 0.25rem;
+  font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+  box-shadow: none;
+}
+
+.role-accordion .accordion-button:not(.collapsed) {
+  background: transparent;
+  box-shadow: none;
+}
+
+.role-accordion .accordion-button::after {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(11%) saturate(1042%) hue-rotate(48deg) brightness(94%) contrast(87%);
+}
+
+.role-btn-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  text-align: left;
+}
+
+.role-accordion .entry-title {
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.role-accordion .entry-org {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.role-accordion .entry-date {
+  white-space: nowrap;
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin-left: 1rem;
+}
+
+.role-accordion .accordion-body {
+  padding: 0.25rem 0.25rem 1.6rem;
+}
+
+.role-accordion .accordion-body > p:first-child {
+  margin-top: 0;
+}
+
+.subtitle {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--ink);
+  margin: 1.4rem 0 0.6rem;
+  border: none;
+  padding: 0;
+}
+
+/* Nested accomplishment accordions */
+.sub-accordion {
+  border: 1px solid var(--line);
+  margin-bottom: 1rem;
+}
+
+.sub-accordion .accordion-item {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--line);
+}
+
+.sub-accordion .accordion-item:last-child {
+  border-bottom: none;
+}
+
+.sub-accordion .accordion-button {
+  background: var(--paper);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.88rem;
+  color: var(--ink);
+  padding: 0.75rem 1rem;
+  box-shadow: none;
+}
+
+.sub-accordion .accordion-button:not(.collapsed) {
+  background: #eeece4;
+  color: var(--accent);
+  box-shadow: none;
+}
+
+.sub-accordion .accordion-button::after {
+  width: 0.9rem;
+  height: 0.9rem;
+  background-size: 0.9rem;
+  filter: brightness(0) saturate(100%) invert(37%) sepia(11%) saturate(1042%) hue-rotate(48deg) brightness(94%) contrast(87%);
+}
+
+.sub-accordion .accordion-body {
+  font-size: 0.95rem;
+  padding: 0.9rem 1rem 1rem;
+}
+
+.sub-accordion .accordion-body p:last-child {
+  margin-bottom: 0;
+}
+
+.placeholder-note {
+  color: var(--muted);
+  font-style: italic;
+}
+
+ul.highlights {
+  margin: 1.2rem 0 0;
+  padding-left: 1.2rem;
+}
+
+ul.highlights li {
+  margin-bottom: 0.4rem;
+}
+
+@media (max-width: 480px) {
+  .role-accordion .accordion-button {
+    flex-wrap: wrap;
+  }
+  .role-accordion .entry-date {
+    margin-left: 0;
+    margin-top: 0.2rem;
+  }
+}
