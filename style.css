@@ -73,6 +73,13 @@
     margin: 0 0 1rem;
   }
 
+  .tagline-note {
+    color: var(--muted);
+    font-size: 0.90rem;
+    margin: 0 0 1rem;
+    font-style: italic;
+  }
+
   .contact {
     font-family: "Helvetica Neue", Arial, sans-serif;
     font-size: 0.9rem;
