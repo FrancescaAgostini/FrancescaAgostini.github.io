@@ -1,14 +1,8 @@
-# Francesca Agostini's web page
-This is a simple presentation page written _by myself about myself_. 
+# Francesca Agostini
+This is my personal website (WIP). 
 
-### Contents
-* Academic informations
-    * [University of Geneva](https://www.unige.ch/) 
-* Professional backgrounds
-* Passions
-    * Including a few pictures
+You can find more about my professional and academic path, as well as my passions.
 
-> Note: currently, this page is only available in French.
 
 
 
