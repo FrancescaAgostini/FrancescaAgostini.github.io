@@ -1,64 +1,174 @@
-body {
-    font-family: 'Courier New', monospace;
-}
+:root {
+    --ink: #23241f;
+    --paper: #f7f5f0;
+    --line: #d8d3c5;
+    --accent: #5b6f4e;
+    --muted: #6b6a63;
+  }
 
-h1 {
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    line-height: 1.6;
+  }
+
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 6rem;
+  }
+
+  header {
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  nav.pagenav {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    margin: 1.2rem 0 0;
+    display: flex;
+    gap: 1.4rem;
+  }
+
+  nav.pagenav a {
+    color: var(--muted);
+    text-decoration: none;
+    padding-bottom: 0.2rem;
+    border-bottom: 2px solid transparent;
+  }
+
+  nav.pagenav a:hover {
+    color: var(--ink);
+  }
+
+  nav.pagenav a.active {
+    color: var(--ink);
+    border-bottom-color: var(--accent);
+  }
+
+  .placeholder {
+    border: 1px dashed var(--line);
+    padding: 2.5rem 1.5rem;
     text-align: center;
-    align-items: center;
-    font-size: 2.3em;
-}
+    color: var(--muted);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.95rem;
+  }
 
-div div {
-    font-size: 1.1em;
-    text-align: center;
-    align-items: center;
-}
+  h1 {
+    font-size: 2.4rem;
+    margin: 0 0 0.3rem;
+    font-weight: normal;
+  }
 
-#mountains {
-    width: 10rem;
-}
+  .tagline {
+    color: var(--muted);
+    font-size: 1.05rem;
+    margin: 0 0 1rem;
+  }
 
-.accordion-button.collapsed {
-    font-size: medium;
+  .contact {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  .contact a { color: var(--accent); text-decoration: none; }
+  .contact a:hover { text-decoration: underline; }
+
+  .contact span:not(:last-child)::after {
+    content: " · ";
+    color: var(--line);
+  }
+
+  section { margin-bottom: 2.8rem; }
+
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    color: var(--accent);
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.2rem;
+  }
+
+  h4 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--accent);
+    margin-bottom: 0.4rem;
+  }
+
+  p { margin: 0 0 1rem; }
+
+  .entry { margin-bottom: 1.6rem; }
+  .entry:last-child { margin-bottom: 0; }
+
+  .entry-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .entry-title { font-weight: bold; font-size: 1rem; }
+  .entry-org { color: var(--muted); font-size: 0.95rem; }
+  .entry-date {
+    white-space: nowrap;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+
+  .subtitle {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
     font-weight: bold;
+    margin-top: 0.8rem;
+  }
 
-}
+  ul { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+  li { margin-bottom: 0.4rem; }
 
-.accordion-body {
-    font-size: medium;
-    text-align: left;
-}
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.8rem 1.5rem;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.92rem;
+  }
 
-.accordion-item {
-        margin-left: 1em;
-        margin-right: 1em;
-    }
+  .skills-grid dt {
+    color: var(--muted);
+    font-size: 0.78rem;
+    margin-bottom: 0.15rem;
+  }
 
-.btn.btn-outline-primary {
-    margin-bottom: 1rem;
-}
+  .skills-grid dd { margin: 0; }
 
-.carousel {
-    max-width: 35rem;
-    margin: auto;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
+  .langs {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.92rem;
+  }
 
-.carousel img {
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-}
+  footer {
+    border-top: 1px solid var(--line);
+    padding-top: 1.2rem;
+    margin-top: 3rem;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.82rem;
+    color: var(--muted);
+  }
 
-@media (max-width: 576px) {
-    .carousel {
-        margin-left: 0.7em;
-        margin-right: 0.7em;
-       }
-    }
-
-h3 {
-    font-size: medium;
-    font-weight: bold;
-}
+  @media (max-width: 480px) {
+    .wrap { padding: 2.5rem 1.2rem 4rem; }
+    h1 { font-size: 1.9rem; }
+    .entry-head { flex-direction: column; gap: 0.1rem; }
+  }
