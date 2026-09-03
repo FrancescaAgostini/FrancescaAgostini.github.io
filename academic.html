@@ -31,163 +31,195 @@
   </header>
 
   <section>
-    <h2>Education</h2>
+    <h2 class="no-line">Education</h2>
 
-    <div class="entry">
-      <div class="entry-head">
-        <div>
-          <div class="entry-title">Master of Arts in Communication and Translation Technology (MATECH)</div>
-          <div class="entry-org">University of Geneva</div>
+    <div class="accordion role-accordion" id="eduAccordion">
+
+      <!-- ================= MATECH ================= -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="eduHeadingMA">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#eduCollapseMA" aria-expanded="false" aria-controls="eduCollapseMA">
+            <span class="role-btn-label">
+              <span class="entry-title">Master of Arts in Communication and Translation Technology (MATECH)</span>
+              <span class="entry-org">University of Geneva</span>
+            </span>
+            <span class="entry-date">Sep 2025 – ongoing</span>
+          </button>
+        </h3>
+        <div id="eduCollapseMA" class="accordion-collapse collapse" aria-labelledby="eduHeadingMA"
+             data-bs-parent="#eduAccordion">
+          <div class="accordion-body">
+
+            <p>Specialised programme combining languages and digital technologies, covering translation technology (CAT tools, TMs, NMT, LLM, generative AI, RAG), localisation, project management and quality assurance, terminology, and web development (Scala, Python, SQL, Figma, Android Studio). The programme combines theoretical content and hands-on projects across all the touched domains — a few examples below.</p>
+
+            <!-- MT projects -->
+
+            <h4 class="subtitle">Machine Translation projects</h4>
+            <div class="accordion sub-accordion" id="maProjectsAccordionMT">
+
+              <div class="accordion-item">
+                <h5 class="accordion-header" id="maProjHeading2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#maProjCollapse2" aria-expanded="false" aria-controls="maProjCollapse2">
+                    Comparative evaluation of neural vs. generative AI machine translation
+                  </button>
+                </h5>
+                <div id="maProjCollapse2" class="accordion-collapse collapse" aria-labelledby="maProjHeading2"
+                     data-bs-parent="#maProjectsAccordionMT">
+                  <div class="accordion-body">
+                    <p>I conducted a comparative study evaluating the performance of a neural machine translation system (DeepL) against a generative AI translation system (Mistral) on a 300-word English-to-French text. Translation quality was assessed using the MQM (Multidimensional Quality Metrics) framework, providing a structured comparison of error types and overall output quality between the two approaches.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h5 class="accordion-header" id="maProjHeading3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#maProjCollapse3" aria-expanded="false" aria-controls="maProjCollapse3">
+                    Impact of pre-editing on machine translation quality for community-generated content
+                  </button>
+                </h5>
+                <div id="maProjCollapse3" class="accordion-collapse collapse" aria-labelledby="maProjHeading3"
+                     data-bs-parent="#maProjectsAccordionMT">
+                  <div class="accordion-body">
+                    <p>I conducted a research project examining how pre-editing (text normalisation) affects machine translation quality on community-generated content: text containing irregular punctuation, non-standard spelling, and culturally specific language. Using a 20-sentence English-to-French corpus, I compared human vs. LLM-based pre-editing and evaluated the correlation between automated metrics (BERTScore, COMET-Kiwi) and human quality assessments (SQM), including designing the LLM prompt used for automatic normalisation.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- PM projects -->
+
+            <h4 class="subtitle">Translation Project Management projects</h4>
+            <div class="accordion sub-accordion" id="maProjectsAccordionPM">
+
+              <div class="accordion-item">
+                <h5 class="accordion-header" id="maProjHeading1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#maProjCollapse1" aria-expanded="false" aria-controls="maProjCollapse1">
+                    Traducthon: 48-hour translation marathon for Terre des hommes Suisse
+                  </button>
+                </h5>
+                <div id="maProjCollapse1" class="accordion-collapse collapse" aria-labelledby="maProjHeading1"
+                     data-bs-parent="#maProjectsAccordionPM">
+                  <div class="accordion-body">
+                    <p>I took part in the Traducthon, a two-day translation marathon in which students collaborated to translate content into 4 locales for an external partner, <a href="https://terredeshommessuisse.ch/" target="_blank">Terre des Hommes Suisse</a>. Working under tight time constraints, I contributed to coordination and translation technology implementation (CAT tool set up, TM and MT implementation) to ensure the project was delivered within the event's timeframe. Very positive feedback was received from the partner.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- UX design projects -->
+
+            <h4 class="subtitle">UX design projects</h4>
+            <div class="accordion sub-accordion" id="maProjectsAccordionUX">
+
+              <div class="accordion-item">
+                <h5 class="accordion-header" id="maProjHeading4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#maProjCollapse4" aria-expanded="false" aria-controls="maProjCollapse4">
+                    Prototype development of a plant care companion app interface
+                  </button>
+                </h5>
+                <div id="maProjCollapse4" class="accordion-collapse collapse" aria-labelledby="maProjHeading4"
+                     data-bs-parent="#maProjectsAccordionUX">
+                  <div class="accordion-body">
+                    <p>As part of a UX design course, I co-led the end-to-end UX design process for a plant care companion app, from initial research to a validated interactive prototype. I conducted user research, including client interviews, an online survey, and one-on-one interviews, to define user personas, scenarios, and a competitive analysis of existing products. Based on these insights, I designed paper prototypes and wireframes, detailing key features such as adding a plant to a collection, a care calendar, and a plant disease diagnostic tool. I then ran think-aloud usability evaluations and A/B testing, using SUS (System Usability Scale) scoring to identify improvement areas, and iterated the design into a high-fidelity interactive prototype with a full style guide and logo. Finally, I conducted a round of usability testing on the interactive prototype, using AttrakDiff to evaluate the user experience. You can find the <a href="https://www.figma.com/proto/b4Kn82ybS744MuIoBEvXX3/Plant-Care-Companion?node-id=29-7&t=AmB82T4nlodon4J0-1&starting-point-node-id=29%3A7" target="_blank">Figma prototype here</a> (iPhone 17).</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Localisation projects -->
+
+            <h4 class="subtitle">Localisation and Webmastering projects</h4>
+            <div class="accordion sub-accordion" id="maProjectsAccordionLoc">
+
+              <div class="accordion-item">
+                <h5 class="accordion-header" id="maProjHeading5">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#maProjCollapse5" aria-expanded="false" aria-controls="maProjCollapse5">
+                    Localisation of several digital products: apps, graphics, open-source software, and a multilingual website
+                  </button>
+                </h5>
+                <div id="maProjCollapse5" class="accordion-collapse collapse" aria-labelledby="maProjHeading5"
+                     data-bs-parent="#maProjectsAccordionLoc">
+                  <div class="accordion-body">
+                    <p>As part of two Localisation courses, I localised a range of product types, including graphic assets (using Affinity), mobile applications (using Android Studio), and open-source software, and built the structure of a multilingual website using HTML, CSS, and Bootstrap. I applied localisation best practices such as element positioning (e.g. keeping the language selector always visible) and <a href="https://wave.webaim.org/" target="_blank">WAVE accessibility guidelines</a>.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
         </div>
-        <div class="entry-date">Sep 2025 – ongoing</div>
       </div>
-      <p>Specialised programme combining languages and digital technologies, covering translation technology (CAT tools, TMs, NMT, LLM, generative AI, RAG), localisation, project management and quality assurance, terminology, and web development (Scala, Python, SQL, Figma, Android Studio). The programme combines theoretical content and hands-on projects across all the touched domains A few examples here below.</p>
 
-      <!-- MT projects -->
+      <!-- ================= BA ================= -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="eduHeadingBA">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#eduCollapseBA" aria-expanded="false" aria-controls="eduCollapseBA">
+            <span class="role-btn-label">
+              <span class="entry-title">Bachelor of Arts in Multilingual Communication</span>
+              <span class="entry-org">University of Geneva</span>
+            </span>
+            <span class="entry-date">Sep 2018 – Jul 2021</span>
+          </button>
+        </h3>
+        <div id="eduCollapseBA" class="accordion-collapse collapse" aria-labelledby="eduHeadingBA"
+             data-bs-parent="#eduAccordion">
+          <div class="accordion-body">
 
-      <h4 class="subtitle">Machine Translation projects </h4>
-      <div class="accordion sub-accordion" id="maProjectsAccordion">
+            <p>This programme focuses on multilingual communication and linguistic mediation, covering translation practice and methodology, language and civilization, language technology, intercultural communication, and specialized communication across three working languages: Italian, English and French.</p>
 
-        <div class="accordion-item">
-          <h5 class="accordion-header" id="maProjHeading2">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#maProjCollapse2" aria-expanded="false" aria-controls="maProjCollapse2">
-              Comparative evaluation of neural vs. generative AI machine translation
-            </button>
-          </h5>
-          <div id="maProjCollapse2" class="accordion-collapse collapse" aria-labelledby="maProjHeading2"
-               data-bs-parent="#maProjectsAccordion">
-            <div class="accordion-body">
-              <p>I conducted a comparative study evaluating the performance of a neural machine translation system (DeepL) against a generative AI translation system (Mistral) on a 300-word English-to-French text. Translation quality was assessed using the MQM (Multidimensional Quality Metrics) framework, providing a structured comparison of error types and overall output quality between the two approaches.</p>
-            </div>
+            <h4 class="subtitle">Erasmus semester</h4>
+            <p>I spent a semester abroad at the ISIT, Paris. I focused the coursework of this semester on marketing, intercultural communication and translation practice.</p>
+
+            <!-- <h4 class="subtitle">Projects</h4>
+            <div class="accordion sub-accordion" id="baProjectsAccordion">
+
+              <div class="accordion-item">
+                <h5 class="accordion-header" id="baProjHeading1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#baProjCollapse1" aria-expanded="false" aria-controls="baProjCollapse1">
+                    Project name to be added
+                  </button>
+                </h5>
+                <div id="baProjCollapse1" class="accordion-collapse collapse" aria-labelledby="baProjHeading1"
+                     data-bs-parent="#baProjectsAccordion">
+                  <div class="accordion-body">
+                    <p class="placeholder-note">Details to be added.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h5 class="accordion-header" id="baProjHeading2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#baProjCollapse2" aria-expanded="false" aria-controls="baProjCollapse2">
+                    Project name to be added
+                  </button>
+                </h5>
+                <div id="baProjCollapse2" class="accordion-collapse collapse" aria-labelledby="baProjHeading2"
+                     data-bs-parent="#baProjectsAccordion">
+                  <div class="accordion-body">
+                    <p class="placeholder-note">Details to be added.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div> -->
+
           </div>
         </div>
-
-         <div class="accordion-item">
-          <h5 class="accordion-header" id="maProjHeading3">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#maProjCollapse3" aria-expanded="false" aria-controls="maProjCollapse3">
-              Impact of pre-editing on machine translation quality for community-generated content
-            </button>
-          </h5>
-          <div id="maProjCollapse3" class="accordion-collapse collapse" aria-labelledby="maProjHeading3"
-               data-bs-parent="#maProjectsAccordion">
-            <div class="accordion-body">
-              <p>I conducted a research project examining how pre-editing (text normalisation) affects machine translation quality on community-generated content: text containing irregular punctuation, non-standard spelling, and culturally specific language. Using a 20-sentence English-to-French corpus, I compared human vs. LLM-based pre-editing and evaluated the correlation between automated metrics (BERTScore, COMET-Kiwi) and human quality assessments (SQM), including designing the LLM prompt used for automatic normalisation.</p>
-            </div>
-          </div>
-        </div>
-</div>
-
-<!-- PM projects -->
-      
-      <h4 class="subtitle">Translation Project Management projects </h4>
-      <div class="accordion sub-accordion" id="maProjectsAccordion">
-
-                <div class="accordion-item">
-          <h5 class="accordion-header" id="maProjHeading1">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#maProjCollapse1" aria-expanded="false" aria-controls="maProjCollapse1">
-              Traducthon: 48-hour translation marathon for Terre des hommes Suisse
-            </button>
-          </h5>
-          <div id="maProjCollapse1" class="accordion-collapse collapse" aria-labelledby="maProjHeading1"
-               data-bs-parent="#maProjectsAccordion">
-            <div class="accordion-body">
-              <p>I took part in the Traducthon, a two-day translation marathon in which students collaborated to translate content into 4 locales for an external partner, <a href="https://terredeshommessuisse.ch/" target="_blank">Terre des Hommes Suisse</a>. Working under tight time constraints, I contributed to coordination and translation technology implementation (CAT tool set up, TM and MT implementation) to ensure the project was delivered within the event's timeframe. A very positive feedback was received from the partner.</p>
-            </div>
-          </div>
-        </div>
-    </div>
-
-    <!-- UX design projects -->
-
-        <h4 class="subtitle">UX design projects</h4>
-      <div class="accordion sub-accordion" id="maProjectsAccordion">
-
-                 <div class="accordion-item">
-          <h5 class="accordion-header" id="maProjHeading4">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#maProjCollapse4" aria-expanded="false" aria-controls="maProjCollapse4">
-              Prototype development of a plant care companion app interface
-            </button>
-          </h5>
-          <div id="maProjCollapse4" class="accordion-collapse collapse" aria-labelledby="maProjHeading4"
-               data-bs-parent="#maProjectsAccordion">
-            <div class="accordion-body">
-              <p>As part of a UX design course, I co-led the end-to-end UX design process for a plant care companion app, from initial research to a validated interactive prototype. I conducted user research, including client interviews, an online survey, and one-on-one interviews, to define user personas, scenarios, and a competitive analysis of existing products. Based on these insights, I designed paper prototypes and wireframes, detailing key features such as adding a plant to a collection, a care calendar, and a plant disease diagnostic tool. I then ran think-aloud usability evaluations and A/B testing, using SUS (System Usability Scale) scoring to identify improvement areas, and iterated the design into a high-fidelity interactive prototype with a full style guide and logo. Finally, I conducted a round of usability testing on the interactive prototype, using AttrakDiff to evaluate the user experience. You can find the <a href="https://www.figma.com/proto/b4Kn82ybS744MuIoBEvXX3/Plant-Care-Companion?node-id=29-7&t=AmB82T4nlodon4J0-1&starting-point-node-id=29%3A7 "target="_blank">Figma Prototype here</a> (iPhone 17).</p>
-            </div>
-          </div>
-        </div>
-    </div>
-
-<!-- Localisation projects -->
-
-<h4 class="subtitle">Localisation and Webmastering projects</h4>
-      <div class="accordion sub-accordion" id="maProjectsAccordion">
-
-                 <div class="accordion-item">
-          <h5 class="accordion-header" id="maProjHeading5">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#maProjCollapse5" aria-expanded="false" aria-controls="maProjCollapse5">
-              Localisation of several digital products: apps, graphics, opensource software, and a multilingual website
-            </button>
-          </h5>
-          <div id="maProjCollapse5" class="accordion-collapse collapse" aria-labelledby="maProjHeading5"
-               data-bs-parent="#maProjectsAccordion">
-            <div class="accordion-body">
-              <p>As part of two Localisation courses, I localised a range of product types, including graphic assets (using Affinity), mobile applications (using Android Studio), and open-source software, and built the structure of a multilingual website using HTML, CSS, and Bootstrap. I applied localisation best practices such as element positioning (e.g. keeping the language selector always visible) and <a href="https://wave.webaim.org/" target="_blank">WAVE accessibility guidelines</a>.</p>
-            </div>
-          </div>
-        </div>
-    </div>
-
-    </div>
-
-    <div class="entry">
-      <div class="entry-head">
-        <div>
-          <div class="entry-title">Bachelor of Arts in Multilingual Communication</div>
-          <div class="entry-org">University of Geneva</div>
-        </div>
-        <div class="entry-date">Sep 2018 – Jul 2021</div>
       </div>
-      <p>This programme focuses on multilingual communication and linguistic mediation, covering translation practice and methodology, language and civilization, language technology, intercultural communication, and specialized communication across three working languages: Italian, English and French.</p>
 
-      <!-- <h4 class="subtitle">Projects</h4>
-      <div class="accordion sub-accordion" id="baProjectsAccordion">
-
-        <div class="accordion-item">
-          <h5 class="accordion-header" id="baProjHeading1">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#baProjCollapse1" aria-expanded="false" aria-controls="baProjCollapse1">
-              Project name to be added
-            </button>
-          </h5>
-          <div id="baProjCollapse1" class="accordion-collapse collapse" aria-labelledby="baProjHeading1"
-               data-bs-parent="#baProjectsAccordion">
-            <div class="accordion-body">
-              <p class="placeholder-note">Details to be added.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <h5 class="accordion-header" id="baProjHeading2">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#baProjCollapse2" aria-expanded="false" aria-controls="baProjCollapse2">
-              Project name to be added
-            </button>
-          </h5>
-          <div id="baProjCollapse2" class="accordion-collapse collapse" aria-labelledby="baProjHeading2"
-               data-bs-parent="#baProjectsAccordion">
-            <div class="accordion-body">
-              <p class="placeholder-note">Details to be added.</p>
-            </div>
-          </div>
-        </div>
-
-      </div> -->
     </div>
   </section>
 
