@@ -107,14 +107,21 @@
     margin-bottom: 1.2rem;
   }*/
 
-  h2 {
+h2 {
   font-family: "Iowan Old Style";
   font-size: 0.85rem;
+  font-weight: bold;      /* was implicit before */
+  line-height: 1.4;         /* was implicit before */
   letter-spacing: 0.04em;
   color: var(--accent);
   border-bottom: 1px none var(--line);
   padding-bottom: 0.5rem;
+  /*margin-top: 0.5em;*/           /* was implicit before */
   margin-bottom: 1.2rem;
+}
+
+hr.with-line {
+  border-bottom: 1px solid var(--line);
 }
 
   h4 {
