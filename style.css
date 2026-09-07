@@ -12,7 +12,7 @@
     margin: 0;
     background: var(--paper);
     color: var(--ink);
-    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-family: "Iowan Old Style";
     line-height: 1.6;
   }
 
@@ -29,7 +29,7 @@
   }
 
   nav.pagenav {
-    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-family: "Iowan Old Style", Arial, sans-serif;
     font-size: 0.9rem;
     margin: 1.2rem 0 0;
     display: flex;
@@ -57,7 +57,7 @@
     padding: 2.5rem 1.5rem;
     text-align: center;
     color: var(--muted);
-    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-family: "Iowan Old Style", Arial, sans-serif;
     font-size: 0.95rem;
   }
 
@@ -81,7 +81,7 @@
   }
 
   .contact {
-    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-family: "Iowan Old Style", Arial, sans-serif;
     font-size: 0.9rem;
     color: var(--muted);
   }
@@ -97,7 +97,7 @@
   section { margin-bottom: 2.8rem; }
 
   h2 {
-    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-family: "Iowan Old Style";
     font-size: 0.85rem;
     letter-spacing: 0.04em;
     color: var(--accent);
@@ -107,16 +107,17 @@
   }
 
   h2.no-line {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Iowan Old Style";
   font-size: 0.85rem;
   letter-spacing: 0.04em;
   color: var(--accent);
-  border-bottom: none;
-  padding-bottom: 0;
+  border-bottom: 1px none var(--line);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.2rem;
 }
 
   h4 {
-    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-family: "Iowan Old Style", Arial, sans-serif;
     font-size: 0.85rem;
     color: var(--accent);
     margin-bottom: 0.4rem;
@@ -132,7 +133,7 @@
     justify-content: space-between;
     align-items: baseline;
     gap: 1rem;
-    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-family: "Iowan Old Style", Arial, sans-serif;
   }
 
   .entry-title { font-weight: bold; font-size: 1rem; }
@@ -144,7 +145,7 @@
   }
 
   .subtitle {
-    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-family: "Iowan Old Style", Arial, sans-serif;
     font-size: 0.9rem;
     font-weight: bold;
     margin-top: 0.8rem;
@@ -157,7 +158,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 0.8rem 1.5rem;
-    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-family: ""Iowan Old Style"", Arial, sans-serif;
     font-size: 0.92rem;
   }
 
@@ -170,7 +171,7 @@
   .skills-grid dd { margin: 0; }
 
   .langs {
-    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-family: ""Iowan Old Style"", Arial, sans-serif;
     font-size: 0.92rem;
   }
 
@@ -178,7 +179,7 @@
     border-top: 1px solid var(--line);
     padding-top: 1.2rem;
     margin-top: 3rem;
-    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-family: ""Iowan Old Style"", Arial, sans-serif;
     font-size: 0.82rem;
     color: var(--muted);
   }
@@ -200,7 +201,7 @@
   --bs-accordion-active-color: var(--ink);
   --bs-accordion-btn-color: var(--ink);
   --bs-accordion-color: var(--ink);
-  font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+  font-family: "Iowan Old Style", "Times New Roman", serif;
 }
 
 .role-accordion {
@@ -220,7 +221,7 @@
 .role-accordion .accordion-button {
   background: transparent;
   padding: 1.1rem 0.25rem;
-  font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+  font-family: "Iowan Old Style", "Times New Roman", serif;
   box-shadow: none;
 }
 
@@ -243,20 +244,20 @@
 .role-accordion .entry-title {
   font-weight: bold;
   font-size: 1rem;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Iowan Old Style", "Helvetica Neue", Arial, sans-serif;
 }
 
 .role-accordion .entry-org {
   color: var(--muted);
   font-size: 0.9rem;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Iowan Old Style", "Helvetica Neue", Arial, sans-serif;
 }
 
 .role-accordion .entry-date {
   white-space: nowrap;
   font-size: 0.82rem;
   color: var(--muted);
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Iowan Old Style", "Helvetica Neue", Arial, sans-serif;
   margin-left: 1rem;
 }
 
@@ -269,7 +270,7 @@
 }
 
 .subtitle {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Iowan Old Style", "Helvetica Neue", Arial, sans-serif;
   font-size: 0.9rem;
   font-weight: bold;
   color: var(--ink);
@@ -296,7 +297,7 @@
 
 .sub-accordion .accordion-button {
   background: var(--paper);
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Iowan Old Style", "Helvetica Neue", Arial, sans-serif;
   font-size: 0.88rem;
   color: var(--ink);
   padding: 0.75rem 1rem;
