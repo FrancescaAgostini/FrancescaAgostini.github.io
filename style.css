@@ -97,7 +97,7 @@
 
   section { margin-bottom: 2.8rem; }
 
-  h2 {
+  /*h2 {
     font-family: "Iowan Old Style";
     font-size: 0.85rem;
     letter-spacing: 0.04em;
@@ -105,9 +105,9 @@
     border-bottom: 1px solid var(--line);
     padding-bottom: 0.5rem;
     margin-bottom: 1.2rem;
-  }
+  }*/
 
-  h2.no-line {
+  h2 {
   font-family: "Iowan Old Style";
   font-size: 0.85rem;
   letter-spacing: 0.04em;
