@@ -75,6 +75,7 @@
 
   .tagline-note {
     color: var(--muted);
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 0.90rem;
     margin: 0 0 1rem;
     font-style: italic;
