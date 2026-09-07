@@ -1,9 +1,9 @@
 :root {
-    --ink: #23241f;
-    --paper: #f7f5f0;
+    --ink: #000000;
+    --paper: #ffffff;
     --line: #d8d3c5;
-    --accent: #5b6f4e;
-    --muted: #6b6a63;
+    --accent: #000000;
+    --muted: rgb(0, 0, 0);
   }
 
   * { box-sizing: border-box; }
